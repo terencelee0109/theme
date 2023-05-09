@@ -1,4 +1,4 @@
-return {
+{
 color1: '#484A4D', 
 color2: '#DDDDDD', 
 color3: '#36384D', 
