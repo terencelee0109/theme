@@ -1,214 +1,214 @@
-const colors = {
-	color1: '#484A4D', //text14, text38, text38_D, text43, text71, text81, text110, text111, text135, text150, matchPaging_text142, bkg46, border11, service_choice, n_color, n_color_active, text111, text193, text186
-	color2: '#DDDDDD', //bkg6, border6, .main_con_li, borderDD_all
-	color3: '#36384D', //bkg_secondary, bg_white_thin_dark, bkg34_D
-	color4: '#5E5F67', //text49, text15, matchPaging_text144, text25, bkg68, bkg68_D, text93, text93_D
-	color5: '#A6ABAF', //text23, text45_D, text34, courseText1, text78, borderA6_r, text142, text71_D, text_A6ABAF, bkg19, bkg19_D, text141_D, text102, text91_D, grad27_1
-	color6: '#F6F6F6', //bkg23, border9, pop_foot_left, pop_head, bkg34, border_all, border_t, soccer-line, bkg62, bg_F6F6F6, bkg36, bkg89, bkg_search_btn, bkg67, bkg70, bkg72
-	color7: '#F2D6B3', //grad13_1, grad4_2, grad5_1, grad7_2, gift_conversion, choose_active, bkg84, header_div
-	color8: '#D5B292', //grad13_2, grad4_1, grad5_2, grad7_1, address_submit, gift_conversion, choose_active, bkg85, bkg85_D, header_div, grad21_1, grad21_1_D
-	color9: '#222433', //text125, text125_D, text158, text8, text16, text81, text150_D, text151_D, text159_D, bkg17_D, bkg48_D, bkg70_D, border5_D, border30_D, border_b_home_dark, bkg90_D, text189_D
-	color10: '#45465B', //border10, border_secondary, border2_D, border25_D, pop_head_dark, border_all_dark, border28, border28_D, bkg4_D, border_t_dark, borderF5_b_dark, borderF2_b_dark, border20_D, borderF2_l_dark, bkg67_D, bkg53_D, bkg42_D, bkg40_D
-	color11: '#343434', //text13, text41, text138, text76, text_c343434, text91
-	color12: '#5DB936', //text69, n_down
-	color13: '#F22A2A', //text63, text107_D, rowCon_red, n_up, border29, border29_D
-	color14: '#F8F9FE', //grad17_1, grad17_2, grad16_1, grad16_2
-	color15: '#A0A5AF', //grad17_2_D, grad6_2_D, bkg83_D
-	color16: '#979DB0', //text50, text25_D, text4, text43_D, text_btn_secondary, text21, text152, text_c979DB0, title_text, text108, text165, text165_D, text162, text162_D, text28_D, ask-service, main_text2
-	color17: '#4A4B4D', //text50_D, text152_D
-	color18: '#A7AAB2', //text44, gift_date, text76_D, text78_D, text56_D, text170, text170_D
-	color19: '#EAECED', //border4, border_normal, border21
-	color20: '#DCC7B4', //bkg14
-	color21: '#DBCBBC', //grad2_1
-	color22: '#E1BB96', //bkg7, schedule_at
-	color23: '#484952', //text19, text29, text99, text_c484952
-	color24: '#9BA1D3', //text19_D
-	color25: '#46485A', //bkg10_D, bkg13_D
-	color26: '#212236', //bkg12_D, bkg26_D
-	color27: '#FDF9EF', //bkg13
-	color28: '#E5E4DF', //bkg9
-	color29: '#FCF6EF', //bkg10
-	color30: '#F6F9FE', //bkg15, bkg25
-	color31: '#4F5272', //bkg15_D, bkg22_D, bkg58_D, matchPaging_bkg76_D, bkg62_D, bg_F6F6F6_dark, border32_D
-	color32: '#EDEFF5', //bkg16, bkg22
-	color33: '#585B7C', //bkg_16_D, bkg43_D
-	color34: '#220505', //text37
-	color35: '#414660', //bkg25_D, bg_F8F9FC_dark
-	color36: '#C4C8D3', //text10_D, text99_D, text_c979DB0_D
-	color37: '#70ABE3', //text24, rowCon_blue
-	color38: '#9a9ba0', //bkg8
-	color39: '#D2D2D2', //grad3_2, grad27_2
-	color40: '#CDCED2', //text39, text22
-	color41: '#E4E4E6', //border2
-	color42: '#999696', //text1
-	color43: '#477FE7', //text2, text_hyperlink
-	color44: '#131318', //text3
-	color45: '#585C60', //text7_D
-	color46: '#fd0f10', //text139
-	color47: '#E81717', //text129
-	color48: '#FBDC9E', //grad19_1
-	color49: '#FABB56', //grad19_2
-	color50: '#FCEFDF', //grad5_1_D, address_submit, bkg84_D, grad22_1, grad21_2, grad21_2_D
-	color51: '#3B3B3B', //grad23_1
-	color52: '#151622', //grad23_1_D
-	color53: '#767676', //grad23_2
-	color54: '#383A4D', //grad23_2_D
-	color55: '#FED578', //text74_D
-	color56: '#5c5d62', //text128, text45, text61, text51, text75
-	color57: '#8B8D91', //grad16_2_D
-	color58: '#ededed', //border25
-	color59: '#CACDD9', //text15_D, text58_D, text_232529_dark, text124_D
-	color60: '#231236', //bkg64
-	color61: '#B91935', //bkg65
-	color62: '#EDC080', //text130
-	color63: '#00bfd4', //text131
-	color64: '#f60a0a', //text_alert
-	color65: '#E3351C', //text132
-	color66: '#232529', //text68, text30, text57, text64, text_c232529, text_232529, text_c232529_bet, text124
-	color67: '#530808', //timekeeping_text
-	color68: '#fdfafb', //activ_time
-	color69: '#e9e9eb', //picStyle, bet_img, border13, border32, border15, border15_D, bkg45
-	color70: '#767B95', //picStyle_D
-	color71: '#d8bd96', //schedule_at, .serve_i, grad18_2, grad18_2_D
-	color72: '#824729', //text145
-	color73: '#383A51', //matchPaging_bkg77_D
-	color74: '#E8E8E8', //matchPaging_border30, border30, text51_D
-	color75: '#E4E6E7', //slider
-	color76: '#FAF6F0', //text83,
-	color77: 'rgba(52,54,70,0.5)', //text83_D
-	color78: '#CFB69A', //choose_active
-	color79: '#9b9b9b', //text113
-	color80: '#bc9c71', //text114
-	color81: '#f0e5d7', //.serve_i, grad18_1, grad18_1_D
-	color82: '#FCFDFF', //grad9_1, grad6_1, bkg82
-	color83: '#E7EBF5', //grad9_2, grad6_2, bkg83, text75_D
-	color84: '#E0E1E3', //.basics_bg, border1, border1_D
-	color85: '#cfe4f2', //.begin_bg
-	color86: '#d2eec8', //.pass_bg
-	color87: '#f7d3d3', //.error_bg
-	color88: '#8D9298', //text11, text11_D
-	color89: '#666666', //text17
-	color90: '#333449', //text26, text27, text28
-	color91: '#292B3C', //bkg31_D * (color346) bkg47_D, border17_D, bkg45_D, bkg76_D
-	color92: '#cfb498', //border17
-	color93: '#EDF2FA', //bkg48
-	color94: '#545559', //text86, text87, text122, text31
-	color95: '#F8FAFD', //bkg52, bkg54, bkg90, bkg17
-	color96: '#A6A6A6', //text87_D, text46, text46_D
-	color97: '#3C3E53', //bkg54_D
-	color98: '#F3F6FC', //bkg55, bkg66
-	color99: '#2A2A2A', //text90, text36
-	color100: '#22b7f9', //bkg77, bkg77_D, text144, text144_D
-	color101: '#F56D04',//bkg81, bkg81_D, text147, text147_D
-	color102: '#E4C7A8', //text72, text72_D
-	color103: '#5C5C5D', //text121
-	color104: '#818386', //text126, text100
-	color105: '#949AB0', //text126_D, text122_D, text34_D, text60_D, text61_D, text67_D, text64_D, border13_D, text70_D, text21_D
-	color106: '#B47D56', //text157, text157_D
-	color107: '#77c457', //border27, text117, text117_D, bkg51, bkg51_D
-	color108: '#7FB8E4', //bkg71, bkg71_D
-	color109: '#D2D3D6', //text135_D, text123_D, text31_D
-	color110: '#93989D', //text134, text134_D
-	color111: '#525357', //text123, text33
-	color112: '#000000', //text_btn_primary_D, grad20_1, grad20_1_D, bkg60, bkg60_D, text171, text54, text97, text97_D
-	color113: '#cc9937', //text109, text109_D
-	color114: '#97989A', //text104, text104_D
-	color115: '#9C9C9C', //text102_D, text70
-	color116: '#3B3E57', //bkg41_D, bkg103_D, bkg57_D, bkg3_D, bkg91_D, bkg_search_btn_D, bkg102_D
-	color117: '#676982', //bkg66_D
-	color118: '#D6B494', //border_primary, color_primary
-	color119: '#F8F8FB', //bkg53
-	color120: '#2c2b33', //text127
-	color121: '#7F88A3', //text89
-	color122: '#CACDD9', //text89_D
-	color123: '#6B728B', //grad12_1_D
-	color124: '#F7F5F5', //border21_D
-	color125: '#f01818', //bkg_notification
-	color126: '#FF8205', //bkg59, bkg59_D
-	color127: '#0099DE', //text148
-	color128: '#8BC7FF', //text148_D
-	color129: '#EFEFEF', //live_list_bg
-	color130: '#45486A', //live_list_bg_D
-	color131: '#5A5A5A', //text149
-	color132: '#bfdfff', //bkg39, bkg74
-	color133: '#8E9193', //bkg39_D
-	color134: '#747574', //text82, text82_D
-	color135: '#EEEFF0', //bkg42, border20
-	color136: '#26273a', //bkg75_D
-	color137: '#63666C', //text22_D
-	color138: '#EDEDEE', //bkg57
-	color139: '#CACDD7', //text32
-	color140: '#606582', //text32_D, border22_D
-	color141: '#9DA3B7', //text40, text40_D, text77
-	color142: '#ff0000', //text48
-	color143: '#a1a3ab', //text94, text94_D, text67
-	color144: '#F8F9FC', //bkg43, bg_F8F9FC
-	color145: '#FEEAEA', //bkg79, bkg79_D
-	color146: '#ff6600', //bkg30, bkg30_D
-	color147: '#F10000', //text120, text84, text85, text85_D
-	color148: '#FB4E4E', //text120_D
-	color149: '#F3545B', //bkg32
-	color150: '#A0A3AA', //text100_D
-	color151: '#50ba58', //text_success
-	color152: '#e4e4e5', //border16
-	color153: '#343646', //text66_D
-	color154: '#F4F5F9', //border5, border_b_home
-	color155: '#E3E4EA', //border22
-	color156: '#DD8840', //text138_D, text137, text137_D
-	color157: '#4F5052', //text_btn_secondary_D
-	color158: '#5E6182', //bkg74_D
-	color159: '#3D4253', //grad1_1_D
-	color160: '#636475', //text33_D
-	color161: '#EB5757', //text107
-	color162: '#E2E2E2', //border31
-	color163: '#707070', //border31_D, text141
-	color164: '#FAFAFA', //grad11_1, grad11_2
-	color165: '#4C4E61', //grad11_1_D, grad11_2_D
-	color166: '#F7E8D6', //grad10_1, grad10_1_D
-	color167: '#E6C095', //grad10_2, grad10_2_D
-	color168: '#757474', //text59
-	color169: '#D0D0D0', //border7, border7_D, text35
-	color170: '#F4F4F4', //basics_icon
-	color171: '#E8E9ED', //border19
-	color172: '#72738A', //border19_D
-	color173: '#f0f0f0', //bkg20
-	color174: '#B9B9B9', //text42,text42_D
-	color175: '#f2f2f2', //borderF2_b, borderF2_l
-	color176: '#252736', //borderDD_all_dark
-	color177: '#4A5258', //borderA6_r_dark, text142_D
-	color178: '#BEC0C3', //text_c484A4D_dark(course2)
-	color179: '#EFD1AB', //grad22_2
-	color180: '#E4E4E4', //border23, border23_D
-	color181: '#E6E6E6', //text110_D
-	color182: '#ed1a1a', //text118
-	color183: '#555555', //text119
-	color184: '#A4A4A4', //text53, text55, text55_D
-	color185: '#85D01E', //grad8_1
-	color186: '#57B609', //grad8_2
-	color187: '#DFF1D7', //bkg80
-	color188: '#9EA1B0', //text111_D
-	color189: '#DDC0A6', //text112
-	color190: '#FF3030', //text115
-	color191: '#DFA868', //text116
-	color192: '#42455A', //bkg36_D
-	color193: '#EEDCC8', //bkg37
-	color194: '#77787B', //bkg38, text80
-	color195: '#C7C7CE', //bkg38_D, text80_D
-	color196: '#2E3148', //
-	color197: '#E91E1E', //dataStatistics
-	color198: '#cd2927', //freeTip, orgPrice
-	color199: '#ECECEC', //text65, text65_D
-	color200: '#e3c3a2', //bkg18, bkg18_D
-	color201: '#17171740', //bkg88
-	color202: '#131313', //bkg88_D
-	color203: '#F7F5F5', //bkg44, bkg44_D
-	color204: '#939393', //text143
-	color205: '#dcdcdc', //matchPaging_text146
-	color206: '#B97E47', //new_account_text145
-	color207: '#19A1F5', //lottery_text2
-	color208: '#A62639', //text190 lottery
-	color209: '#EFD0AE', //border37, bkg118
-	color210: '#B61812', //lottery draw color
-	color211: '#FDF3E5', //grad26_3
-	color212: '#DCA87F', //grad26_4
+{
+color1: '#484A4D', 
+color2: '#DDDDDD', 
+color3: '#36384D', 
+color4: '#5E5F67', 
+color5: '#A6ABAF', 
+color6: '#F6F6F6', 
+color7: '#F2D6B3', 
+color8: '#D5B292', 
+color9: '#222433', 
+color10: '#45465B', 
+color11: '#343434', 
+color12: '#5DB936', 
+color13: '#F22A2A', 
+color14: '#F8F9FE', 
+color15: '#A0A5AF', 
+color16: '#979DB0', 
+color17: '#4A4B4D', 
+color18: '#A7AAB2', 
+color19: '#EAECED', 
+color20: '#DCC7B4', 
+color21: '#DBCBBC', 
+color22: '#E1BB96', 
+color23: '#484952', 
+color24: '#9BA1D3', 
+color25: '#46485A', 
+color26: '#212236', 
+color27: '#FDF9EF', 
+color28: '#E5E4DF', 
+color29: '#FCF6EF', 
+color30: '#F6F9FE', 
+color31: '#4F5272', 
+color32: '#EDEFF5', 
+color33: '#585B7C', 
+color34: '#220505', 
+color35: '#414660', 
+color36: '#C4C8D3', 
+color37: '#70ABE3', 
+color38: '#9a9ba0', 
+color39: '#D2D2D2', 
+color40: '#CDCED2', 
+color41: '#E4E4E6', 
+color42: '#999696', 
+color43: '#477FE7', 
+color44: '#131318', 
+color45: '#585C60', 
+color46: '#fd0f10', 
+color47: '#E81717', 
+color48: '#FBDC9E', 
+color49: '#FABB56', 
+color50: '#FCEFDF', 
+color51: '#3B3B3B', 
+color52: '#151622', 
+color53: '#767676', 
+color54: '#383A4D', 
+color55: '#FED578', 
+color56: '#5c5d62', 
+color57: '#8B8D91', 
+color58: '#ededed', 
+color59: '#CACDD9', 
+color60: '#231236', 
+color61: '#B91935', 
+color62: '#EDC080', 
+color63: '#00bfd4', 
+color64: '#f60a0a', 
+color65: '#E3351C', 
+color66: '#232529', 
+color67: '#530808', 
+color68: '#fdfafb', 
+color69: '#e9e9eb', 
+color70: '#767B95', 
+color71: '#d8bd96', 
+color72: '#824729', 
+color73: '#383A51', 
+color74: '#E8E8E8', 
+color75: '#E4E6E7', 
+color76: '#FAF6F0', 
+color77: 'rgba(52,54,70,0.5)', 
+color78: '#CFB69A', 
+color79: '#9b9b9b', 
+color80: '#bc9c71', 
+color81: '#f0e5d7', 
+color82: '#FCFDFF', 
+color83: '#E7EBF5', 
+color84: '#E0E1E3', 
+color85: '#cfe4f2', 
+color86: '#d2eec8', 
+color87: '#f7d3d3', 
+color88: '#8D9298', 
+color89: '#666666', 
+color90: '#333449', 
+color91: '#292B3C', 
+color92: '#cfb498', 
+color93: '#EDF2FA', 
+color94: '#545559', 
+color95: '#F8FAFD', 
+color96: '#A6A6A6', 
+color97: '#3C3E53', 
+color98: '#F3F6FC', 
+color99: '#2A2A2A', 
+color100: '#22b7f9', 
+color101: '#F56D04',
+color102: '#E4C7A8', 
+color103: '#5C5C5D', 
+color104: '#818386', 
+color105: '#949AB0', 
+color106: '#B47D56', 
+color107: '#77c457', 
+color108: '#7FB8E4', 
+color109: '#D2D3D6', 
+color110: '#93989D', 
+color111: '#525357', 
+color112: '#000000', 
+color113: '#cc9937', 
+color114: '#97989A', 
+color115: '#9C9C9C', 
+color116: '#3B3E57', 
+color117: '#676982', 
+color118: '#D6B494', 
+color119: '#F8F8FB', 
+color120: '#2c2b33', 
+color121: '#7F88A3', 
+color122: '#CACDD9', 
+color123: '#6B728B', 
+color124: '#F7F5F5', 
+color125: '#f01818', 
+color126: '#FF8205', 
+color127: '#0099DE', 
+color128: '#8BC7FF', 
+color129: '#EFEFEF', 
+color130: '#45486A', 
+color131: '#5A5A5A', 
+color132: '#bfdfff', 
+color133: '#8E9193', 
+color134: '#747574', 
+color135: '#EEEFF0', 
+color136: '#26273a', 
+color137: '#63666C', 
+color138: '#EDEDEE', 
+color139: '#CACDD7', 
+color140: '#606582', 
+color141: '#9DA3B7', 
+color142: '#ff0000', 
+color143: '#a1a3ab', 
+color144: '#F8F9FC', 
+color145: '#FEEAEA', 
+color146: '#ff6600', 
+color147: '#F10000', 
+color148: '#FB4E4E', 
+color149: '#F3545B', 
+color150: '#A0A3AA', 
+color151: '#50ba58', 
+color152: '#e4e4e5', 
+color153: '#343646', 
+color154: '#F4F5F9', 
+color155: '#E3E4EA', 
+color156: '#DD8840', 
+color157: '#4F5052', 
+color158: '#5E6182', 
+color159: '#3D4253', 
+color160: '#636475', 
+color161: '#EB5757', 
+color162: '#E2E2E2', 
+color163: '#707070', 
+color164: '#FAFAFA', 
+color165: '#4C4E61', 
+color166: '#F7E8D6', 
+color167: '#E6C095', 
+color168: '#757474', 
+color169: '#D0D0D0', 
+color170: '#F4F4F4', 
+color171: '#E8E9ED', 
+color172: '#72738A', 
+color173: '#f0f0f0', 
+color174: '#B9B9B9', 
+color175: '#f2f2f2', 
+color176: '#252736', 
+color177: '#4A5258', 
+color178: '#BEC0C3', 
+color179: '#EFD1AB', 
+color180: '#E4E4E4', 
+color181: '#E6E6E6', 
+color182: '#ed1a1a', 
+color183: '#555555', 
+color184: '#A4A4A4', 
+color185: '#85D01E', 
+color186: '#57B609', 
+color187: '#DFF1D7', 
+color188: '#9EA1B0', 
+color189: '#DDC0A6', 
+color190: '#FF3030', 
+color191: '#DFA868', 
+color192: '#42455A', 
+color193: '#EEDCC8', 
+color194: '#77787B', 
+color195: '#C7C7CE', 
+color196: '#2E3148', 
+color197: '#E91E1E', 
+color198: '#cd2927', 
+color199: '#ECECEC', 
+color200: '#e3c3a2', 
+color201: '#17171740', 
+color202: '#131313', 
+color203: '#F7F5F5', 
+color204: '#939393', 
+color205: '#dcdcdc', 
+color206: '#B97E47', 
+color207: '#19A1F5', 
+color208: '#A62639', 
+color209: '#EFD0AE', 
+color210: '#B61812', 
+color211: '#FDF3E5', 
+color212: '#DCA87F', 
 }
