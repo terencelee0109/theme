@@ -233,7 +233,7 @@
 "color210": "#B61812", 
 "color211": "#FDF3E5", 
 "color212": "#DCA87F",
-"color213": "#DCA87F",
+"color213": "#D3B599",
 "color214": "#2D2F43", 
 "color215": "#F3F3F3", 
 "color216": "#F5F5F5", 
@@ -244,5 +244,6 @@
 "color221": "rgba(46, 48, 69, 0.5)",
 "color222": "#F7E3C6",
 "color223": "#D89967",
-"color224": "rgba(0, 0, 0, 0.4)"
+"color224": "rgba(0, 0, 0, 0.4)",
+"color225": "rgba(217, 191, 162, 0.4)"
 }
