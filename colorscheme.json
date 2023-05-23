@@ -288,5 +288,7 @@
 "color265": "#80B8E2",
 "color266": "#56C04B",
 "color267": "#CCCCCC",
-"color268" : "#2D9CDB"
+"color268": "#2D9CDB",
+"color269": "rgba(252, 239, 223, 0.1)",
+ "color270": "rgba(252, 239, 223, 0.80)"
 }
