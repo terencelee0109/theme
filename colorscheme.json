@@ -303,5 +303,6 @@
 "color280": "#959595",
 "color281": "#FF8000",
 "color282": "rgb(211, 181, 153)",
-  "color283": "rgba($color: #A2A2A2, $alpha: 0.3)",
+"color283": "rgba($color: #A2A2A2, $alpha: 0.3)",
+"color284": "rgba(121, 121, 121, 0.418)"
 }
