@@ -37,7 +37,12 @@
   "oth_aux1": "#000",
   "oth_aux2": "#000",
 
+  "activity_unactive_bg": "rgba(0,0,0, 0)",
+
   "activity_text1": "#EDD07D",
+  "activity_unactive_text": "#928E7D",
+
+  "activity_unactive_bor": "#928E7D",
 
   "activity_gdt_theme1": "#767676 ",
   "activity_gdt_theme2": "#343434",
