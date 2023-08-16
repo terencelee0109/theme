@@ -55,6 +55,8 @@
   "activity_gdt_theme1": "#767676 ",
   "activity_gdt_theme2": "#343434",
 
+  "activity_shadow1": "rgba(0,0,0, 0.4)",
+
   "picker_mask_gdt_theme1": "rgba(46,48,69,1)",
   "picker_mask_gdt_theme2": "rgba(46,48,69,0.5)",
 
