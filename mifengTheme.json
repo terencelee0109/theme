@@ -37,7 +37,7 @@
   "oth_aux1": "#000",
   "oth_aux2": "#000",
 
-  "activity_unactive_bg": "rgba(0,0,0, 0)",
+  "activity_bg_unactive": "rgba(0,0,0, 0)",
   "activity_bg_selected": "#EDD07D",
   "activity_bg_vip": "#2D2D2D",
 
@@ -45,12 +45,12 @@
   "activity_text2": "#A62639",
   "activity_text3": "#FFFFFF",
   "activity_text4": "#EF5D6E",
-  "activity_unactive_text": "#928E7D",
+  "activity_text_unactive": "#928E7D",
   "activity_text5": "#222433",
   "activity_text6": "#111212",
   "activity_text7": "#A6ABAF",
 
-  "activity_unactive_bor": "#928E7D",
+  "activity_bor_unactive": "#928E7D",
 
   "activity_gdt_theme1": "#767676 ",
   "activity_gdt_theme2": "#343434",
