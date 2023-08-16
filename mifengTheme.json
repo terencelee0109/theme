@@ -44,6 +44,7 @@
   "activity_bg_aux5": "#202020",
   "activity_bg_aux6": "#707070",
 
+  "activity_text_aux3": "#FFFFFF",
   "activity_text_aux4": "#EF5D6E",
   "activity_text_unactive": "#928E7D",
   "activity_text_aux5": "#222433",
@@ -54,7 +55,6 @@
   "activity_text_aux10": "#484A4D",
   "activity_text_aux11": "#EDD07D",
   "activity_text_aux12": "#A62639",
-  "activity_text_aux13": "#FFFFFF",
 
   "activity_bor_unactive": "#928E7D",
   "activity_bor_underline": "#EDD07D",
