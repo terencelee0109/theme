@@ -52,6 +52,9 @@
   "activity_gdt_theme1": "#767676 ",
   "activity_gdt_theme2": "#343434",
 
+  "picker_mask_gdt_theme1": "#rgba(46, 48, 69, 1)",
+  "picker_mask_gdt_theme2": "#rgba(46, 48, 69, 0.5)",
+
   "neutral_black": "#333333",
   "tab_text1": "#98A1A6",
   "tab_text2": "#D6B494",
