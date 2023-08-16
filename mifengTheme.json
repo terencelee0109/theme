@@ -38,8 +38,8 @@
   "oth_aux2": "#000",
 
   "activity_unactive_bg": "rgba(0,0,0, 0)",
-  "activity_selected_bg": "#EDD07D",
-  "activity_vip_bg": "#2D2D2D",
+  "activity_bg_selected": "#EDD07D",
+  "activity_bg_vip": "#2D2D2D",
 
   "activity_text1": "#EDD07D",
   "activity_text2": "#A62639",
