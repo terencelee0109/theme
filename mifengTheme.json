@@ -40,6 +40,7 @@
   "activity_bg_unactive": "rgba(0,0,0, 0)",
   "activity_bg_selected": "#EDD07D",
   "activity_bg_vip": "#2D2D2D",
+  "activity_bg1": "#FFFFFF",
 
   "activity_text1": "#EDD07D",
   "activity_text2": "#A62639",
