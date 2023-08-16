@@ -56,8 +56,8 @@
   "activity_bor_unactive": "#928E7D",
   "activity_bor_underline": "#EDD07D",
 
-  "activity_gdt_theme0": "#FFFFFF",
   "activity_gdt_theme1": "#FFFFFF",
+  "activity_gdt_theme0": "#FFFFFF",
   "activity_gdt_theme2": "#343434",
 
   "activity_shadow1": "rgba(0,0,0, 0.4)",
