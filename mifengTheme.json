@@ -16,6 +16,7 @@
   "bg_aux10": "#DEBA9635",
 
   "bg_home_balance": "#2C2C2C",
+  "bg_updata_new": "#5DB936",
   
   "bor_theme": "#EBB561",
   "bor_theme1": "#F1E3A0",
@@ -26,6 +27,8 @@
   "bor_underline": "#EDD07D",
   "bor_aux3": "#707070",
   "bor_aux4": "#EBB56110",
+
+  "bor_aux101": "#333333",
   
   "text_theme": "#EBB561",
   "text_theme1": "#F1E3A0",
@@ -52,6 +55,7 @@
   "text_aux19_lottery_popup": "#E82215",
   "text_aux20_lottery_popup": "#343434",
   "text_aux101": "#EDE1AF",
+  "text_aux102": "#FFFFFF",
   
   "btn_theme": "#000000",
   "btn_main": "#000000",
